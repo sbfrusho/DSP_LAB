@@ -16,11 +16,23 @@ def _convolution(x , h):
 
 
 #define parameters
-x = [1,2,1,-1]
-h = [1,2,3,1]
+x = [1,2,3,4,5]
+h = [1,2,3,4]
 
 convolution = _convolution(x,h)
 conovol = np.convolve(x,h)
 
+k = np.arange(len(x) + len(h) - 1)
+
 print(convolution)
 print(conovol)
+
+# plt.figure(figsize=(12,8))
+
+# plt.subplot(3,2,1)
+# plt.stem(k , convolution)
+# plt.title("Correlation of x and h")
+# plt.xlabel("k")
+# plt.ylabel("y(k)")
+
+# plt.show()
