@@ -1,1 +1,2 @@
-_k
+
+print("Exponential Signal:", exponential_s

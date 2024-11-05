@@ -16,8 +16,12 @@ def _convolution(x , h):
 
 
 #define parameters
-x = [1,2,3,4,5]
-h = [1,2,3,4]
+# x = [1,2,3,4,5]
+# h = [1,2,3,4]
+
+x = list(map(int, input("Enter elements for x: ").split()))
+
+h = list(map(int, input("Enter elements for h:").split()))
 
 convolution = _convolution(x,h)
 conovol = np.convolve(x,h)

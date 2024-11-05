@@ -26,8 +26,9 @@ def _correlation(x, h):
     return y
 
 # Input sequences
-x = [1,2,3,4]
-h = [1,2,3,4,5]
+x = list(map(int, input("Enter elements for x: ").split()))
+
+h = list(map(int, input("Enter elements for h:").split()))
 # h.reverse()
 
 k = np.arange(len(x) + len(h) - 1)
