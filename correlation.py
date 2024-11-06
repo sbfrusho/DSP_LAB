@@ -15,7 +15,7 @@ def _correlation(x,h):
     #             y_n += x[k] * h[n-k]
     #     y[n] = y_n
     # return y
-    
+
     result_length = len(x) + len(h) - 1
     yk = np.zeros(result_length)
 

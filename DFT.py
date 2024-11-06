@@ -74,6 +74,7 @@ plt.figure(figsize=(12,8))
 
 #plotting the original values of x(n)
 plt.subplot(3,2,1)
+plt.plot(n,xn)
 plt.stem(n , xn , linefmt="green")
 plt.title("Values of x(n)")
 plt.xlabel("n")
